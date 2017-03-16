@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity
         String dir_path = Environment.getExternalStorageDirectory().getAbsolutePath();
         EditText et = (EditText) findViewById(R.id.editText1);
 
+
         if (item.getItemId() == R.id.save) {
 
             try {
@@ -61,10 +62,10 @@ public class MainActivity extends AppCompatActivity
 
                 et.setText(br.readLine());
 
-                String et1 = "";
-                while((et1 = br.readLine()) != null)
+                String line = "";
+                while((line = br.readLine()) != null)
                 {
-                    System.out.println(et1);
+                    System.out.println(line);
                 }
                 br.close();
 
